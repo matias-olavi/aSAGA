@@ -4,7 +4,9 @@ Automatic Sleep Analysis with Gray Areas
 
 Codes used for validating the aSAGA pipeline with Dreem Open Data.
 
-To set up your model see https://github.com/rikuhuttunen/psg-simultscoring-models
+Trained models are not available, due to sensitive medical information used in the training.
 
-To train your model for sleep staging follow the example https://github.com/UEF-SmartSleepLab/sleeplab-format/tree/main/examples/dod_sleep_staging
+To set up your own model see https://github.com/rikuhuttunen/psg-simultscoring-models
+
+To train your own model for sleep staging follow the example https://github.com/UEF-SmartSleepLab/sleeplab-format/tree/main/examples/dod_sleep_staging
 
