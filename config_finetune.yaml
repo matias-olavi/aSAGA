@@ -1,0 +1,96 @@
+datasets:
+  pa_hospital:
+    components:
+      C4:
+        ctype: sample_array
+        fs: 64.0
+        src_name: E1M2_64Hz_hp
+      hypnogram:
+        ctype: annotation
+        return_type: segmentation_combined
+        sampling_interval: 30
+        src_name: hypnogram_annotated.parquet
+        value_map:
+          N1: 1
+          N2: 2
+          N3: 3
+          REM: 4
+          WAKE: 0
+          _default: 0
+    ds_dir: /wrk/matias/data/pa_hospital
+    roi_src_name: hypnogram
+    roi_src_type: annotation
+    series_name: psg_2015_2017
+    splits:
+      test:
+        config:
+          duration: -1.0
+          start_sec: 0.0
+        n: 88
+      train:
+        config:
+          duration: 3600
+          start_sec: -1.0
+        n: 716
+      val:
+        config:
+          duration: 3600
+          start_sec: -1.0
+        n: 79
+model:
+  aspp_depth: 256
+  block_args:
+  - dilation: 2
+    kernel_size: 5
+    output_filters: 32
+    pool_size: 8
+    se_ratio: 0.25
+    strides: 1
+  - dilation: 2
+    kernel_size: 5
+    output_filters: 48
+    pool_size: 6
+    se_ratio: 0.25
+    strides: 1
+  - dilation: 2
+    kernel_size: 5
+    output_filters: 64
+    pool_size: 4
+    se_ratio: 0.25
+    strides: 1
+  - dilation: 1
+    kernel_size: 3
+    output_filters: 96
+    pool_size: 2
+    se_ratio: 0.25
+    strides: 1
+  - dilation: 1
+    kernel_size: 3
+    output_filters: 128
+    pool_size: 2
+    se_ratio: 0.1
+    strides: 1
+  - dilation: 1
+    kernel_size: 3
+    output_filters: 256
+    pool_size: 1
+    se_ratio: 0.1
+    strides: 1
+  input_names:
+  - C4
+  output_args:
+  - dense_ksize: 1
+    n_classes: 5
+    output_name: hypnogram
+    samples_per_segment: 1920
+    segment_ksize: 1
+  output_names:
+  - hypnogram
+module_str: slf_simultscoring.utime_tf
+training:
+  after_cycle_epochs: 20
+  batch_size: 8
+  epochs: 100
+  lr_div_factor: 1.0
+  model_ckpt_dir: /wrk/matias/models/slf_simultscoring
+  peak_learning_rate: 0.001
