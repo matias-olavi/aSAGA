@@ -8,5 +8,5 @@ Trained models are not available, due to sensitive medical information used in t
 
 To set up your own model see https://github.com/rikuhuttunen/psg-simultscoring-models
 
-To train your own model with open data follow the example https://github.com/UEF-SmartSleepLab/sleeplab-format/tree/main/examples/dod_sleep_staging
+To train your own model with open data and utilizing the sleeplab-format follow the example https://github.com/UEF-SmartSleepLab/sleeplab-format/tree/main/examples/dod_sleep_staging
 
