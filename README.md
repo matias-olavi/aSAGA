@@ -9,7 +9,7 @@ Cite sleeplab format using [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7
 
 Trained models are not available, due to sensitive medical information used in the training.
 
-To set up your own model see https://github.com/rikuhuttunen/psg-simultscoring-models
+To set up your own model for automatic sleep staging see https://github.com/rikuhuttunen/psg-simultscoring-models
 
-To train your own model with open data and utilizing the sleeplab-format follow the example https://github.com/UEF-SmartSleepLab/sleeplab-format/tree/main/examples/dod_sleep_staging
+To train your own model with open data and utilizing the sleeplab format follow the example https://github.com/UEF-SmartSleepLab/sleeplab-format/tree/main/examples/dod_sleep_staging
 
