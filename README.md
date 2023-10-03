@@ -1,5 +1,5 @@
 
-![logo-original-1000](https://github.com/matias-olavi/aSAGA/assets/58652644/237a011e-be5f-473f-9e6d-ddd96a24f2c8)
+![logo-original-1000](https://github.com/matias-olavi/aSAGA/assets/58652644/5c28ebf3-c7b7-4644-b95b-caab1f539e1c)
 
 Codes used for validating the aSAGA model with Dreem Open Data.  
 
