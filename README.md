@@ -3,7 +3,7 @@
 
 Codes used for validating the aSAGA model with Dreem Open Data.
 
-Preprint available at [![DOI](https://doi.org/10.48550/arXiv.2310.02032)
+Preprint available at [![DOI](https://img.shields.io/badge/arXiv-arXiv.2310.02032-<COLOR>.svg)](https://doi.org/10.48550/arXiv.2310.02032)
 
 To load and convert the data into sleeplab format see https://github.com/UEF-SmartSleepLab/sleeplab-format/tree/main/examples/dod_sleep_staging
 
