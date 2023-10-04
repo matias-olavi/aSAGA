@@ -1,7 +1,9 @@
 
 ![logo-original-1000](https://github.com/matias-olavi/aSAGA/assets/58652644/5c28ebf3-c7b7-4644-b95b-caab1f539e1c)
 
-Codes used for validating the aSAGA model with Dreem Open Data.  
+Codes used for validating the aSAGA model with Dreem Open Data.
+
+Preprint available at [![DOI](https://doi.org/10.48550/arXiv.2310.02032)
 
 To load and convert the data into sleeplab format see https://github.com/UEF-SmartSleepLab/sleeplab-format/tree/main/examples/dod_sleep_staging
 
